@@ -9,4 +9,40 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="dancingArisu.gif" />
+    <None Remove="Resources\0.png" />
+    <None Remove="Resources\1.png" />
+    <None Remove="Resources\2.png" />
+    <None Remove="Resources\3.png" />
+    <None Remove="Resources\4.png" />
+    <None Remove="Resources\5.png" />
+    <None Remove="Resources\6.png" />
+    <None Remove="Resources\7.png" />
+    <None Remove="Resources\8.png" />
+    <None Remove="Resources\9.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="dancingArisu.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\0.png" />
+    <Resource Include="Resources\1.png" />
+    <Resource Include="Resources\2.png" />
+    <Resource Include="Resources\3.png" />
+    <Resource Include="Resources\4.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\5.png" />
+    <Resource Include="Resources\6.png" />
+    <Resource Include="Resources\7.png" />
+    <Resource Include="Resources\8.png" />
+    <Resource Include="Resources\9.png" />
+  </ItemGroup>
+
 </Project>

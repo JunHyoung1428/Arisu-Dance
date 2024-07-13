@@ -3,10 +3,37 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wpfanimated="http://wpfanimatedgif.codeplex.com"
+        MouseDown="Window_MouseDown"
+        MouseDoubleClick="MainImage_MouseDoubleClick"
         xmlns:local="clr-namespace:Dancing_Arisu"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="498" Width="384" ResizeMode="CanResizeWithGrip" WindowStyle="None" AllowsTransparency="True"
+        Topmost="True">
+    <Window.Background>
+        <SolidColorBrush Opacity="0" Color="White" />
+    </Window.Background>
+    <Viewbox>
+        <StackPanel VerticalAlignment="Bottom" HorizontalAlignment="Center">
+        <!-- Main Image -->
+        <Image x:Name="gifImage" wpfanimated:ImageBehavior.AnimatedSource="dancingArisu.gif"
+               wpfanimated:ImageBehavior.RepeatBehavior="1" wpfanimated:ImageBehavior.AutoStart="True" OpacityMask="White"/>
 
-    </Grid>
+        <!-- Combo Display Area -->
+            <Grid Name="ComboPanel" Visibility="Collapsed"  HorizontalAlignment="Center" OpacityMask="White">
+                    <ItemsControl Name="ComboImages">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <StackPanel Orientation="Horizontal"/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Image Source="{Binding}" Stretch="Uniform"/>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </Grid>
+        </StackPanel>
+    </Viewbox>
 </Window>
