@@ -8,7 +8,7 @@
         MouseDoubleClick="MainImage_MouseDoubleClick"
         xmlns:local="clr-namespace:Dancing_Arisu"
         mc:Ignorable="d"
-        Title="MainWindow" Height="498" Width="384" ResizeMode="CanResizeWithGrip" WindowStyle="None" AllowsTransparency="True"
+        Title="MainWindow" Height="498" Width="384" Icon="aris.png" ResizeMode="CanResizeWithGrip" WindowStyle="None" AllowsTransparency="True"
         Topmost="True">
     <Window.Background>
         <SolidColorBrush Opacity="0" Color="White" />

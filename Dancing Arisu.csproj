@@ -7,9 +7,12 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>aris.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="aris.ico" />
+    <None Remove="aris.png" />
     <None Remove="dancingArisu.gif" />
     <None Remove="Resources\0.png" />
     <None Remove="Resources\1.png" />
@@ -24,10 +27,21 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="aris.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="aris.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="aris.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="dancingArisu.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
