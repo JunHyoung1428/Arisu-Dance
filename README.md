@@ -1,5 +1,5 @@
 <br></br>
- * Artwork from [Blue Sechi](https://x.com/sechihyeo)'s [Aris Dance Video](https://youtu.be/T9F1Wk8DQdg?si=5ECN2Ge3BK0W9hSC)
+ * Artwork from [@Blue Sechi](https://x.com/sechihyeo)'s [Aris Dance Video](https://youtu.be/T9F1Wk8DQdg?si=5ECN2Ge3BK0W9hSC)
 
 
 <br></br><br></br>
